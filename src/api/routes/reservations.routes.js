@@ -56,6 +56,11 @@ const { luhnCheck, isValidExpirationDate } = require('../utils/validators');
  * /reservations:
  *   post:
  *     summary: Create a new reservation
+ *     description: |
+ *       Creates a new flight reservation for the authenticated user.
+ *       Checks seat availability and calculates the total price based on the number of passengers.
+ *       The reservation is initially created with a 'pending' status until payment is processed.
+ *       Available seats on the flight are automatically updated.
  *     tags: [Reservations]
  *     security:
  *       - bearerAuth: []
@@ -72,11 +77,18 @@ const { luhnCheck, isValidExpirationDate } = require('../utils/validators');
  *               flightId:
  *                 type: integer
  *                 description: ID of the flight to reserve
+ *                 example: 5
  *               passengers:
  *                 type: integer
  *                 minimum: 1
  *                 maximum: 9
  *                 description: Number of passengers (1-9)
+ *                 example: 2
+ *               specialRequests:
+ *                 type: string
+ *                 description: Any special requests for the flight
+ *                 maxLength: 500
+ *                 example: "Vegetarian meal, wheelchair assistance"
  *     responses:
  *       201:
  *         description: Reservation created successfully
@@ -87,19 +99,37 @@ const { luhnCheck, isValidExpirationDate } = require('../utils/validators');
  *               properties:
  *                 message:
  *                   type: string
+ *                   description: Success message
  *                   example: "Reservation created successfully"
  *                 reservationId:
  *                   type: integer
- *                   example: 1
+ *                   description: ID of the created reservation
+ *                   example: 42
  *                 totalPrice:
  *                   type: number
+ *                   format: decimal
+ *                   description: Total price for all passengers
  *                   example: 599.98
+ *                 status:
+ *                   type: string
+ *                   description: Current status of the reservation
+ *                   example: "pending"
  *       400:
- *         description: Invalid input or not enough seats available
+ *         $ref: '#/components/responses/BadRequest'
+ *       401:
+ *         $ref: '#/components/responses/UnauthorizedError'
  *       404:
  *         description: Flight not found
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 message:
+ *                   type: string
+ *                   example: "Flight not found"
  *       500:
- *         description: Server error
+ *         $ref: '#/components/responses/ServerError'
  */
 router.post(
   '/',

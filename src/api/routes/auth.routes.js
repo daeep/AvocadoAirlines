@@ -160,6 +160,10 @@ router.post(
  * /auth/login:
  *   post:
  *     summary: Authenticate user and get token
+ *     description: |
+ *       Authenticates a user with their username and password.
+ *       Returns a JWT token that can be used for authenticated requests.
+ *       The token expires after 24 hours.
  *     tags: [Authentication]
  *     security: []
  *     requestBody:
@@ -174,8 +178,76 @@ router.post(
  *             properties:
  *               username:
  *                 type: string
+ *                 description: User's username
+ *                 minLength: 3
+ *                 maxLength: 50
+ *                 example: johndoe
  *               password:
  *                 type: string
+ *                 description: User's password
+ *                 format: password
+ *                 minLength: 8
+ *                 example: Password123!
+ *     responses:
+ *       200:
+ *         description: Authentication successful
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 token:
+ *                   type: string
+ *                   description: JWT token for authentication
+ *                   example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+ *                 user:
+ *                   type: object
+ *                   properties:
+ *                     id:
+ *                       type: integer
+ *                       description: User ID
+ *                       example: 1
+ *                     username:
+ *                       type: string
+ *                       description: User's username
+ *                       example: johndoe
+ *                     email:
+ *                       type: string
+ *                       format: email
+ *                       description: User's email address
+ *                       example: john.doe@example.com
+ *                     firstName:
+ *                       type: string
+ *                       description: User's first name
+ *                       example: John
+ *                     lastName:
+ *                       type: string
+ *                       description: User's last name
+ *                       example: Doe
+ *       400:
+ *         $ref: '#/components/responses/BadRequest'
+ *       401:
+ *         description: Authentication failed
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 message:
+ *                   type: string
+ *                   example: Invalid credentials
+ *       429:
+ *         description: Too many login attempts
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 message:
+ *                   type: string
+ *                   example: Too many requests, please try again later.
+ *       500:
+ *         $ref: '#/components/responses/ServerError'
  */
 router.post(
   '/login',

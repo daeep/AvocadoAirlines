@@ -59,6 +59,10 @@ const { isValidDate, isValidAirportCode, isValidDateRange } = require('../utils/
  * /flights/search:
  *   get:
  *     summary: Search for flights based on criteria
+ *     description: |
+ *       Searches for available flights based on the provided search criteria.
+ *       Returns both outbound flights and return flights (if returnDate is provided).
+ *       Results are filtered by origin, destination, date, and number of available seats.
  *     tags: [Flights]
  *     security: []
  *     parameters:
@@ -66,26 +70,40 @@ const { isValidDate, isValidAirportCode, isValidDateRange } = require('../utils/
  *         name: origin
  *         schema:
  *           type: string
+ *           minLength: 3
+ *           maxLength: 3
+ *           pattern: '^[A-Z]{3}$'
  *         required: true
- *         description: Origin airport code (3 uppercase letters)
+ *         description: Origin airport code (3 uppercase letters IATA code)
+ *         example: LAX
  *       - in: query
  *         name: destination
  *         schema:
  *           type: string
+ *           minLength: 3
+ *           maxLength: 3
+ *           pattern: '^[A-Z]{3}$'
  *         required: true
- *         description: Destination airport code (3 uppercase letters)
+ *         description: Destination airport code (3 uppercase letters IATA code)
+ *         example: JFK
  *       - in: query
  *         name: departureDate
  *         schema:
  *           type: string
+ *           format: date
+ *           pattern: '^(0[1-9]|1[0-2])/(0[1-9]|[12][0-9]|3[01])/[0-9]{4}$'
  *         required: true
- *         description: Departure date (MM/DD/YYYY)
+ *         description: Departure date in MM/DD/YYYY format
+ *         example: 12/25/2023
  *       - in: query
  *         name: returnDate
  *         schema:
  *           type: string
+ *           format: date
+ *           pattern: '^(0[1-9]|1[0-2])/(0[1-9]|[12][0-9]|3[01])/[0-9]{4}$'
  *         required: false
- *         description: Return date for round trips (MM/DD/YYYY)
+ *         description: Return date for round trips in MM/DD/YYYY format (must be after departureDate)
+ *         example: 01/05/2024
  *       - in: query
  *         name: passengers
  *         schema:
@@ -94,6 +112,7 @@ const { isValidDate, isValidAirportCode, isValidDateRange } = require('../utils/
  *           maximum: 9
  *         required: true
  *         description: Number of passengers (1-9)
+ *         example: 2
  *     responses:
  *       200:
  *         description: Flight search successful
@@ -104,16 +123,18 @@ const { isValidDate, isValidAirportCode, isValidDateRange } = require('../utils/
  *               properties:
  *                 outboundFlights:
  *                   type: array
+ *                   description: List of available outbound flights
  *                   items:
  *                     $ref: '#/components/schemas/Flight'
  *                 returnFlights:
  *                   type: array
+ *                   description: List of available return flights (empty if one-way trip)
  *                   items:
  *                     $ref: '#/components/schemas/Flight'
  *       400:
- *         description: Invalid input parameters
+ *         $ref: '#/components/responses/BadRequest'
  *       500:
- *         description: Server error
+ *         $ref: '#/components/responses/ServerError'
  */
 router.get(
   '/search',
