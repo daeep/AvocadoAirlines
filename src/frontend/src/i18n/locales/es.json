@@ -1,0 +1,224 @@
+{
+  "app": {
+    "name": "AvocadoAir",
+    "tagline": "Tu Experiencia Premium de Viaje Aéreo"
+  },
+  "nav": {
+    "home": "Inicio",
+    "flights": "Vuelos",
+    "deals": "Ofertas",
+    "about": "Sobre Nosotros",
+    "contact": "Contacto",
+    "login": "Iniciar Sesión",
+    "register": "Registrarse",
+    "profile": "Perfil",
+    "reservations": "Mis Reservas",
+    "logout": "Cerrar Sesión"
+  },
+  "auth": {
+    "login": {
+      "title": "Iniciar Sesión",
+      "username": "Usuario",
+      "password": "Contraseña",
+      "submit": "Iniciar Sesión",
+      "noAccount": "¿No tienes cuenta?",
+      "register": "Regístrate"
+    },
+    "register": {
+      "title": "Registrarse",
+      "username": "Usuario",
+      "email": "Correo Electrónico",
+      "password": "Contraseña",
+      "confirmPassword": "Confirmar Contraseña",
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "submit": "Registrarse",
+      "hasAccount": "¿Ya tienes cuenta?",
+      "login": "Iniciar Sesión"
+    }
+  },
+  "search": {
+    "title": "Encuentra tu Vuelo",
+    "from": "Desde",
+    "to": "Hasta",
+    "departure": "Fecha de Ida",
+    "return": "Fecha de Vuelta",
+    "passengers": "Pasajeros",
+    "search": "Buscar Vuelos",
+    "roundTrip": "Viaje Redondo"
+  },
+  "flights": {
+    "noResults": "No se encontraron vuelos",
+    "price": "Precio",
+    "select": "Seleccionar Vuelo",
+    "departure": "Salida",
+    "arrival": "Llegada",
+    "duration": "Duración",
+    "stops": "Escalas",
+    "direct": "Directo",
+    "layover": "Escala",
+    "searchResults": "Resultados de Búsqueda de Vuelos",
+    "modifySearch": "Modificar Búsqueda",
+    "outbound": "Vuelos de Ida",
+    "return": "Vuelos de Regreso",
+    "noReturnResults": "No se encontraron vuelos de regreso para estas fechas y ubicaciones",
+    "seatsAvailable": "asientos disponibles"
+  },
+  "booking": {
+    "title": "Reserva tu Vuelo",
+    "passengerDetails": "Detalles del Pasajero",
+    "payment": "Pago",
+    "confirm": "Confirmar Reserva",
+    "firstName": "Nombre",
+    "lastName": "Apellido",
+    "dateOfBirth": "Fecha de Nacimiento",
+    "nationality": "Nacionalidad",
+    "passportNumber": "Número de Pasaporte",
+    "passportExpiry": "Fecha de Vencimiento del Pasaporte",
+    "cardNumber": "Número de Tarjeta",
+    "expiry": "Fecha de Vencimiento",
+    "cvv": "CVV",
+    "total": "Precio Total",
+    "book": "Reservar Ahora",
+    "summary": "Resumen de Reserva",
+    "proceed": "Proceder a la Reserva",
+    "passenger": "Pasajero",
+    "provideDetails": "Por favor proporciona los detalles para todos los pasajeros.",
+    "contactInfo": "Información de Contacto",
+    "email": "Correo Electrónico",
+    "emailPlaceholder": "Ingresa el correo para la confirmación de la reserva",
+    "phone": "Número de Teléfono",
+    "phonePlaceholder": "Ingresa el número de teléfono",
+    "continueToPayment": "Continuar al Pago",
+    "pricePerPassenger": "Precio por pasajero"
+  },
+  "profile": {
+    "title": "Mi Perfil",
+    "personalInfo": "Información Personal",
+    "bookings": "Mis Reservas",
+    "settings": "Configuración",
+    "changePassword": "Cambiar Contraseña",
+    "currentPassword": "Contraseña Actual",
+    "newPassword": "Nueva Contraseña",
+    "confirmPassword": "Confirmar Nueva Contraseña",
+    "update": "Actualizar Perfil"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "confirm": "Confirmar",
+    "close": "Cerrar"
+  },
+  "about": {
+    "title": "Sobre AvocadoAir",
+    "ourStory": {
+      "title": "Nuestra Historia",
+      "content": "Nacida en 2024 en Tuxtla Gutiérrez, Chiapas, México, AvocadoAir surgió de nuestra profunda conexión con la rica herencia agrícola de la región. Inspirados por el mundialmente famoso aguacate Hass, nos propusimos crear una aerolínea que combine la experiencia suave y premium de nuestra fruta homónima con viajes aéreos excepcionales."
+    },
+    "mission": {
+      "title": "Nuestra Misión",
+      "content": "Proporcionar experiencias excepcionales de viaje aéreo mientras promovemos la sostenibilidad y la responsabilidad ambiental en la industria de la aviación. Creemos en hacer que los viajes de calidad sean accesibles para todos, ¡igual que nuestra misión de hacer guacamole para todos!"
+    },
+    "values": {
+      "title": "Nuestros Valores",
+      "items": [
+        {
+          "title": "Excelencia Nutricional",
+          "description": "Así como los aguacates están llenos de nutrientes esenciales, nos aseguramos de que nuestro servicio esté lleno de comodidades y servicios esenciales para nuestros pasajeros."
+        },
+        {
+          "title": "Crecimiento Sostenible",
+          "description": "Como el árbol del aguacate que crece de manera sostenible, nos comprometemos a reducir nuestra huella de carbono y promover prácticas ecológicas en la aviación."
+        },
+        {
+          "title": "Innovación Natural",
+          "description": "Inspirados por la fruta perfecta de la naturaleza, exploramos continuamente nuevas tecnologías y prácticas para mejorar nuestros servicios mientras mantenemos nuestra conexión natural."
+        },
+        {
+          "title": "Conexión Global",
+          "description": "El aguacate es conocido por muchos nombres en todo el mundo: 'avocado' en inglés, 'aguacate' en español, 'abacate' en portugués, 'avocat' en francés, 'alvocat' en catalán y 'ahuácatl' en náhuatl. De manera similar, conectamos a personas a través de idiomas y culturas."
+        },
+        {
+          "title": "Herencia Cultural",
+          "description": "Honramos la rica herencia cultural del aguacate, que se originó en México y se ha vuelto querido en todo el mundo, al igual que honramos las diversas culturas de nuestros pasajeros."
+        }
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "info": {
+      "title": "Ponte en Contacto",
+      "address": "Plaza del Aguacate, Tuxtla Gutiérrez, Chiapas, México",
+      "phone": "+52 (961) 123-4567",
+      "email": "contact@avocadoair.com"
+    },
+    "form": {
+      "title": "Envíanos un Mensaje",
+      "name": "Tu Nombre",
+      "email": "Tu Correo Electrónico",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "submit": "Enviar Mensaje"
+    }
+  },
+  "deals": {
+    "title": "Ofertas Especiales",
+    "bookNow": "Reservar Ahora",
+    "flightDescription": "Vuelo desde {origin} hasta {destination} el {date}",
+    "loading": "Cargando ofertas...",
+    "error": "Error al cargar las ofertas"
+  },
+  "flightSearch": {
+    "title": "Buscar Vuelos",
+    "origin": "Origen",
+    "destination": "Destino",
+    "selectOrigin": "Seleccionar origen",
+    "selectDestination": "Seleccionar destino",
+    "departureDate": "Fecha de Salida",
+    "returnDate": "Fecha de Regreso",
+    "returnFlight": "Vuelo de Regreso",
+    "passengers": "Pasajeros",
+    "search": "Buscar Vuelos",
+    "searching": "Buscando...",
+    "sameAirportError": "El origen y destino no pueden ser iguales",
+    "returnDateRequired": "La fecha de regreso es requerida para viajes de ida y vuelta"
+  },
+  "footer": {
+    "quickLinks": "Enlaces Rápidos",
+    "contact": "Contáctanos",
+    "rights": "Todos los derechos reservados."
+  },
+  "home": {
+    "title": "Vuela con AvocadoAir",
+    "subtitle": "Tu Experiencia Premium de Viaje Aéreo",
+    "bookNow": "Reserva tu Vuelo",
+    "popularDestinations": "Destinos Populares",
+    "whyChooseUs": "¿Por qué Elegir AvocadoAir?",
+    "features": {
+      "globalNetwork": {
+        "title": "Red Global",
+        "description": "Vuela a más de 100 destinos en todo el mundo"
+      },
+      "bestDeals": {
+        "title": "Mejores Ofertas",
+        "description": "Precios competitivos y ofertas especiales"
+      },
+      "onTime": {
+        "title": "Servicio Puntual",
+        "description": "Vuelos puntuales y servicio confiable"
+      },
+      "premium": {
+        "title": "Experiencia Premium",
+        "description": "Amenidades de lujo y comodidad"
+      }
+    }
+  }
+} 

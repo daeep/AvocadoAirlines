@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" version="1.1" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#e0e0e0"/>
+  <g fill="#9e9e9e">
+    <rect x="100" y="200" width="100" height="300"/>
+    <rect x="250" y="150" width="100" height="350"/>
+    <rect x="400" y="250" width="100" height="250"/>
+    <rect x="550" y="100" width="100" height="400"/>
+  </g>
+  <text x="400" y="550" text-anchor="middle" font-family="Arial" font-size="24" fill="#666">
+    City Image Placeholder
+  </text>
+</svg> 

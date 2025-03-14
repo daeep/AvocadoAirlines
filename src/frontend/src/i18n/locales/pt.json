@@ -1,0 +1,155 @@
+{
+  "app": {
+    "name": "AvocadoAir",
+    "tagline": "Sua Experiência Premium de Viagem Aérea"
+  },
+  "nav": {
+    "home": "Início",
+    "flights": "Voos",
+    "deals": "Ofertas",
+    "about": "Sobre Nós",
+    "contact": "Contato",
+    "login": "Entrar",
+    "register": "Registrar",
+    "profile": "Perfil",
+    "logout": "Sair"
+  },
+  "auth": {
+    "login": {
+      "title": "Entrar",
+      "username": "Nome de usuário",
+      "password": "Senha",
+      "submit": "Entrar",
+      "noAccount": "Não tem uma conta?",
+      "register": "Registrar"
+    },
+    "register": {
+      "title": "Registrar",
+      "username": "Nome de usuário",
+      "email": "E-mail",
+      "password": "Senha",
+      "confirmPassword": "Confirmar senha",
+      "firstName": "Nome",
+      "lastName": "Sobrenome",
+      "submit": "Registrar",
+      "hasAccount": "Já tem uma conta?",
+      "login": "Entrar"
+    }
+  },
+  "search": {
+    "title": "Encontre seu Voo",
+    "from": "De",
+    "to": "Para",
+    "departure": "Data de Ida",
+    "return": "Data de Volta",
+    "passengers": "Passageiros",
+    "search": "Buscar Voos",
+    "roundTrip": "Ida e Volta"
+  },
+  "flights": {
+    "noResults": "Nenhum voo encontrado",
+    "price": "Preço",
+    "select": "Selecionar Voo",
+    "departure": "Partida",
+    "arrival": "Chegada",
+    "duration": "Duração",
+    "stops": "Paradas",
+    "direct": "Direto",
+    "layover": "Conexão"
+  },
+  "booking": {
+    "title": "Reserve seu Voo",
+    "passengerDetails": "Detalhes do Passageiro",
+    "payment": "Pagamento",
+    "confirm": "Confirmar Reserva",
+    "firstName": "Nome",
+    "lastName": "Sobrenome",
+    "dateOfBirth": "Data de Nascimento",
+    "nationality": "Nacionalidade",
+    "passportNumber": "Número do Passaporte",
+    "passportExpiry": "Data de Validade do Passaporte",
+    "cardNumber": "Número do Cartão",
+    "expiry": "Data de Validade",
+    "cvv": "CVV",
+    "total": "Total",
+    "book": "Reservar Agora"
+  },
+  "profile": {
+    "title": "Meu Perfil",
+    "personalInfo": "Informações Pessoais",
+    "bookings": "Minhas Reservas",
+    "settings": "Configurações",
+    "changePassword": "Alterar Senha",
+    "currentPassword": "Senha Atual",
+    "newPassword": "Nova Senha",
+    "confirmPassword": "Confirmar Nova Senha",
+    "update": "Atualizar Perfil"
+  },
+  "deals": {
+    "title": "Ofertas Especiais",
+    "bookNow": "Reservar Agora",
+    "flightDescription": "Voo de {origin} para {destination} em {date}",
+    "loading": "Carregando ofertas...",
+    "error": "Erro ao carregar ofertas"
+  },
+  "flightSearch": {
+    "title": "Buscar Voos",
+    "origin": "Origem",
+    "destination": "Destino",
+    "selectOrigin": "Selecione a origem",
+    "selectDestination": "Selecione o destino",
+    "departureDate": "Data de Partida",
+    "returnDate": "Data de Retorno",
+    "returnFlight": "Voo de Retorno",
+    "passengers": "Passageiros",
+    "search": "Buscar Voos",
+    "searching": "Buscando...",
+    "sameAirportError": "Origem e destino não podem ser iguais",
+    "returnDateRequired": "Data de retorno é necessária para voos de ida e volta"
+  },
+  "common": {
+    "loading": "Carregando...",
+    "error": "Erro",
+    "success": "Sucesso",
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "delete": "Excluir",
+    "edit": "Editar",
+    "back": "Voltar",
+    "next": "Próximo",
+    "confirm": "Confirmar",
+    "close": "Fechar"
+  },
+  "about": {
+    "title": "Sobre a Avocado Air",
+    "ourStory": {
+      "title": "Nossa História",
+      "content": "Fundada em 2023, a Avocado Air nasceu de uma visão de criar uma companhia aérea que combina conforto, sustentabilidade e serviço excepcional. Nosso nome reflete nosso compromisso em fornecer uma abordagem fresca para viagens aéreas, assim como o amado abacate - nutritivo, versátil e um símbolo de qualidade."
+    },
+    "mission": {
+      "title": "Nossa Missão",
+      "content": "Na Avocado Air, nossa missão é conectar pessoas e lugares com foco em sustentabilidade, conforto e confiabilidade. Nos esforçamos para tornar as viagens aéreas uma experiência agradável enquanto minimizamos nossa pegada ambiental."
+    },
+    "values": {
+      "title": "Nossos Valores",
+      "items": [
+        {
+          "title": "Sustentabilidade",
+          "description": "Estamos comprometidos em reduzir nosso impacto ambiental através de aeronaves eficientes em combustível, programas de compensação de carbono e práticas sustentáveis em todas as nossas operações."
+        },
+        {
+          "title": "Foco no Cliente",
+          "description": "Nossos passageiros estão no centro de tudo o que fazemos. Ouvimos suas necessidades e melhoramos continuamente nossos serviços para superar suas expectativas."
+        },
+        {
+          "title": "Inovação",
+          "description": "Adotamos novas tecnologias e ideias para melhorar a experiência de viagem e tornar o voo mais eficiente, confortável e agradável."
+        },
+        {
+          "title": "Segurança",
+          "description": "A segurança é nossa principal prioridade. Mantemos os mais altos padrões de segurança em todos os aspectos de nossas operações, desde a manutenção de aeronaves até o treinamento da tripulação."
+        }
+      ]
+    }
+  }
+} 

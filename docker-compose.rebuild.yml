@@ -1,0 +1,78 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  db:
+    container_name: avocadoair-db
+    image: postgres:15
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+    ports:
+      - "${DB_PORT}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./src/api/db/init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER} -d ${DB_NAME}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - avocadoair-network
+
+  # Node.js API
+  api:
+    container_name: avocadoair-api
+    build:
+      context: ./src/api
+      dockerfile: Dockerfile
+    environment:
+      NODE_ENV: ${NODE_ENV}
+      PORT: ${API_PORT}
+      DB_HOST: avocadoair-db
+      DB_PORT: 5432
+      DB_USER: ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
+      DB_NAME: ${DB_NAME}
+      JWT_SECRET: ${JWT_SECRET}
+      VUE_APP_URL: http://localhost:8080
+    ports:
+      - "${API_PORT}:${API_PORT}"
+    volumes:
+      - ./src/api:/app/src/api
+      - /app/node_modules
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - avocadoair-network
+
+  # Vue.js Frontend
+  frontend:
+    container_name: avocadoair-frontend
+    build:
+      context: ./src/frontend
+      dockerfile: Dockerfile
+    environment:
+      NODE_ENV: ${NODE_ENV}
+      VUE_APP_API_URL: http://localhost:${API_PORT}
+    ports:
+      - "${FRONTEND_PORT}:8080"
+    volumes:
+      - ./src/frontend:/app/src/frontend
+      - /app/node_modules
+    depends_on:
+      - api
+    networks:
+      - avocadoair-network
+
+networks:
+  avocadoair-network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+  api_node_modules:
+  frontend_node_modules: 

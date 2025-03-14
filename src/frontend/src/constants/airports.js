@@ -1,0 +1,41 @@
+export const AIRPORTS = {
+  'LAX': 'Los Angeles',
+  'JFK': 'New York',
+  'ORD': 'Chicago',
+  'MIA': 'Miami',
+  'SFO': 'San Francisco',
+  'ATL': 'Atlanta',
+  'BOS': 'Boston',
+  'DFW': 'Dallas',
+  'DEN': 'Denver',
+  'SEA': 'Seattle',
+  'MEX': 'Mexico City',
+  'CUN': 'Cancun',
+  'MTY': 'Monterrey',
+  'GDL': 'Guadalajara',
+  'BJX': 'Leon',
+  'OAX': 'Oaxaca',
+  'TIJ': 'Tijuana',
+  'PVR': 'Puerto Vallarta',
+  'MID': 'Merida',
+  'ACA': 'Acapulco',
+  'LHR': 'London',
+  'CDG': 'Paris',
+  'FRA': 'Frankfurt',
+  'AMS': 'Amsterdam',
+  'DXB': 'Dubai',
+  'SIN': 'Singapore',
+  'HKG': 'Hong Kong',
+  'NRT': 'Tokyo',
+  'ICN': 'Seoul',
+  'SYD': 'Sydney',
+  'MEL': 'Melbourne',
+  'AKL': 'Auckland',
+  'YYZ': 'Toronto',
+  'YVR': 'Vancouver',
+  'GRU': 'São Paulo'
+};
+
+export const getAirportName = (code) => {
+  return `${AIRPORTS[code] || code} (${code})`;
+}; 

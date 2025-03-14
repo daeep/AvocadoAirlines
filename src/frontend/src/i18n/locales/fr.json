@@ -1,0 +1,155 @@
+{
+  "app": {
+    "name": "AvocadoAir",
+    "tagline": "Votre Expérience Premium de Voyage Aérien"
+  },
+  "nav": {
+    "home": "Accueil",
+    "flights": "Vols",
+    "deals": "Offres",
+    "about": "À Propos",
+    "contact": "Contact",
+    "login": "Connexion",
+    "register": "S'inscrire",
+    "profile": "Profil",
+    "logout": "Déconnexion"
+  },
+  "auth": {
+    "login": {
+      "title": "Connexion",
+      "username": "Nom d'utilisateur",
+      "password": "Mot de passe",
+      "submit": "Se connecter",
+      "noAccount": "Vous n'avez pas de compte ?",
+      "register": "S'inscrire"
+    },
+    "register": {
+      "title": "Inscription",
+      "username": "Nom d'utilisateur",
+      "email": "Email",
+      "password": "Mot de passe",
+      "confirmPassword": "Confirmer le mot de passe",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "submit": "S'inscrire",
+      "hasAccount": "Vous avez déjà un compte ?",
+      "login": "Se connecter"
+    }
+  },
+  "search": {
+    "title": "Trouvez votre Vol",
+    "from": "De",
+    "to": "À",
+    "departure": "Date de départ",
+    "return": "Date de retour",
+    "passengers": "Passagers",
+    "search": "Rechercher des vols",
+    "roundTrip": "Aller-retour"
+  },
+  "flights": {
+    "noResults": "Aucun vol trouvé",
+    "price": "Prix",
+    "select": "Sélectionner le vol",
+    "departure": "Départ",
+    "arrival": "Arrivée",
+    "duration": "Durée",
+    "stops": "Escales",
+    "direct": "Direct",
+    "layover": "Escale"
+  },
+  "booking": {
+    "title": "Réserver votre Vol",
+    "passengerDetails": "Détails du passager",
+    "payment": "Paiement",
+    "confirm": "Confirmer la réservation",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "dateOfBirth": "Date de naissance",
+    "nationality": "Nationalité",
+    "passportNumber": "Numéro de passeport",
+    "passportExpiry": "Date d'expiration du passeport",
+    "cardNumber": "Numéro de carte",
+    "expiry": "Date d'expiration",
+    "cvv": "CVV",
+    "total": "Total",
+    "book": "Réserver maintenant"
+  },
+  "profile": {
+    "title": "Mon Profil",
+    "personalInfo": "Informations personnelles",
+    "bookings": "Mes réservations",
+    "settings": "Paramètres",
+    "changePassword": "Changer le mot de passe",
+    "currentPassword": "Mot de passe actuel",
+    "newPassword": "Nouveau mot de passe",
+    "confirmPassword": "Confirmer le nouveau mot de passe",
+    "update": "Mettre à jour le profil"
+  },
+  "deals": {
+    "title": "Offres Spéciales",
+    "bookNow": "Réserver Maintenant",
+    "flightDescription": "Vol de {origin} à {destination} le {date}",
+    "loading": "Chargement des offres...",
+    "error": "Erreur lors du chargement des offres"
+  },
+  "flightSearch": {
+    "title": "Rechercher des Vols",
+    "origin": "Départ",
+    "destination": "Arrivée",
+    "selectOrigin": "Sélectionner l'origine",
+    "selectDestination": "Sélectionner la destination",
+    "departureDate": "Date de Départ",
+    "returnDate": "Date de Retour",
+    "returnFlight": "Vol de Retour",
+    "passengers": "Passagers",
+    "search": "Rechercher des Vols",
+    "searching": "Recherche en cours...",
+    "sameAirportError": "L'origine et la destination ne peuvent pas être identiques",
+    "returnDateRequired": "La date de retour est requise pour les voyages aller-retour"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "success": "Succès",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "back": "Retour",
+    "next": "Suivant",
+    "confirm": "Confirmer",
+    "close": "Fermer"
+  },
+  "about": {
+    "title": "À Propos d'Avocado Air",
+    "ourStory": {
+      "title": "Notre Histoire",
+      "content": "Fondée en 2023, Avocado Air est née d'une vision visant à créer une compagnie aérienne qui allie confort, durabilité et service exceptionnel. Notre nom reflète notre engagement à offrir une approche fraîche du voyage aérien, tout comme l'avocat bien-aimé - nutritif, polyvalent et symbole de qualité."
+    },
+    "mission": {
+      "title": "Notre Mission",
+      "content": "Chez Avocado Air, notre mission est de connecter les personnes et les lieux en mettant l'accent sur la durabilité, le confort et la fiabilité. Nous nous efforçons de faire du voyage aérien une expérience agréable tout en minimisant notre empreinte environnementale."
+    },
+    "values": {
+      "title": "Nos Valeurs",
+      "items": [
+        {
+          "title": "Durabilité",
+          "description": "Nous nous engageons à réduire notre impact environnemental grâce à des avions économes en carburant, des programmes de compensation carbone et des pratiques durables dans toutes nos opérations."
+        },
+        {
+          "title": "Centré sur le Client",
+          "description": "Nos passagers sont au cœur de tout ce que nous faisons. Nous écoutons vos besoins et améliorons continuellement nos services pour dépasser vos attentes."
+        },
+        {
+          "title": "Innovation",
+          "description": "Nous adoptons de nouvelles technologies et idées pour améliorer l'expérience de voyage et rendre le vol plus efficace, confortable et agréable."
+        },
+        {
+          "title": "Sécurité",
+          "description": "La sécurité est notre priorité absolue. Nous maintenons les normes de sécurité les plus élevées dans tous les aspects de nos opérations, de la maintenance des avions à la formation de l'équipage."
+        }
+      ]
+    }
+  }
+} 

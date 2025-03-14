@@ -1,0 +1,266 @@
+{
+  "app": {
+    "name": "AvocadoAir",
+    "tagline": "Your Premium Air Travel Experience"
+  },
+  "nav": {
+    "home": "Home",
+    "flights": "Flights",
+    "deals": "Deals",
+    "about": "About",
+    "contact": "Contact",
+    "login": "Login",
+    "register": "Register",
+    "profile": "Profile",
+    "reservations": "My Reservations",
+    "logout": "Logout"
+  },
+  "auth": {
+    "login": {
+      "title": "Login",
+      "username": "Username",
+      "password": "Password",
+      "submit": "Login",
+      "noAccount": "Don't have an account?",
+      "register": "Register"
+    },
+    "register": {
+      "title": "Register",
+      "username": "Username",
+      "email": "Email",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "submit": "Register",
+      "hasAccount": "Already have an account?",
+      "login": "Login"
+    }
+  },
+  "search": {
+    "title": "Find Your Flight",
+    "from": "From",
+    "to": "To",
+    "departure": "Departure Date",
+    "return": "Return Date",
+    "passengers": "Passengers",
+    "search": "Search Flights",
+    "roundTrip": "Round Trip"
+  },
+  "flights": {
+    "noResults": "No flights found",
+    "price": "Price",
+    "select": "Select Flight",
+    "departure": "Departure",
+    "arrival": "Arrival",
+    "duration": "Duration",
+    "stops": "Stops",
+    "direct": "Direct",
+    "layover": "Layover",
+    "searchResults": "Flight Search Results",
+    "modifySearch": "Modify Search",
+    "outbound": "Outbound Flights",
+    "return": "Return Flights",
+    "noReturnResults": "No return flights found for these dates and locations",
+    "seatsAvailable": "seats available"
+  },
+  "booking": {
+    "title": "Book Your Flight",
+    "passengerDetails": "Passenger Details",
+    "payment": "Payment",
+    "confirm": "Confirm Booking",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "dateOfBirth": "Date of Birth",
+    "nationality": "Nationality",
+    "passportNumber": "Passport Number",
+    "passportExpiry": "Passport Expiry Date",
+    "cardNumber": "Card Number",
+    "expiry": "Expiry Date",
+    "cvv": "CVV",
+    "total": "Total Price",
+    "book": "Book Now",
+    "summary": "Booking Summary",
+    "proceed": "Proceed to Booking",
+    "passenger": "Passenger",
+    "provideDetails": "Please provide details for all passengers.",
+    "contactInfo": "Contact Information",
+    "email": "Email",
+    "emailPlaceholder": "Enter email for booking confirmation",
+    "phone": "Phone Number",
+    "phonePlaceholder": "Enter phone number",
+    "continueToPayment": "Continue to Payment",
+    "pricePerPassenger": "Price per passenger"
+  },
+  "profile": {
+    "title": "My Profile",
+    "memberSince": "Member since",
+    "stats": {
+      "trips": "Trips",
+      "miles": "Miles",
+      "points": "Points"
+    },
+    "personalInfo": {
+      "title": "Personal Information",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "phoneOptional": "(Optional)",
+      "phoneNotProvided": "Not provided"
+    },
+    "address": {
+      "title": "Address Information",
+      "street": "Street Address",
+      "city": "City",
+      "state": "State/Province",
+      "zipCode": "Zip/Postal Code",
+      "country": "Country",
+      "noAddress": "No address information provided.",
+      "addAddress": "Add Address"
+    },
+    "password": {
+      "title": "Change Password",
+      "current": "Current Password",
+      "currentPlaceholder": "Enter your current password",
+      "new": "New Password",
+      "newPlaceholder": "Enter your new password",
+      "confirm": "Confirm New Password",
+      "confirmPlaceholder": "Confirm your new password",
+      "update": "Update Password"
+    },
+    "preferences": {
+      "title": "Travel Preferences",
+      "seat": "Preferred Seat",
+      "meal": "Meal Preference",
+      "notifications": "Notification Settings"
+    },
+    "bookings": {
+      "title": "My Bookings",
+      "upcoming": "Upcoming Flights",
+      "past": "Past Flights"
+    },
+    "save": "Save Changes"
+  },
+  "about": {
+    "title": "About AvocadoAir",
+    "ourStory": {
+      "title": "Our Story",
+      "content": "Born in 2024 in Tuxtla Gutiérrez, Chiapas, Mexico, AvocadoAir emerged from our deep connection with the rich agricultural heritage of the region. Inspired by the world-famous Hass avocado, we set out to create an airline that combines the smooth, premium experience of our namesake fruit with exceptional air travel."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "content": "To provide exceptional air travel experiences while promoting sustainability and environmental responsibility in the aviation industry. We believe in making quality travel accessible to everyone - just like our mission to make guacamole for everybody!"
+    },
+    "values": {
+      "title": "Our Values",
+      "items": [
+        {
+          "title": "Nutritional Excellence",
+          "description": "Just as avocados are packed with essential nutrients, we ensure our service is packed with essential comforts and amenities for our passengers."
+        },
+        {
+          "title": "Sustainable Growth",
+          "description": "Like the avocado tree that grows sustainably, we're committed to reducing our carbon footprint and promoting eco-friendly practices in aviation."
+        },
+        {
+          "title": "Natural Innovation",
+          "description": "Inspired by nature's perfect fruit, we continuously explore new technologies and practices to improve our services while maintaining our natural connection."
+        },
+        {
+          "title": "Global Connection",
+          "description": "The avocado is known by many names around the world: 'avocado' in English, 'aguacate' in Spanish, 'abacate' in Portuguese, 'avocat' in French, 'alvocat' in Catalan, and 'ahuácatl' in Náhuatl. Similarly, we connect people across languages and cultures."
+        },
+        {
+          "title": "Cultural Heritage",
+          "description": "We honor the rich cultural heritage of the avocado, which originated in Mexico and has become beloved worldwide, just as we honor the diverse cultures of our passengers."
+        }
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "info": {
+      "title": "Get in Touch",
+      "address": "Avocado Plaza, Tuxtla Gutiérrez, Chiapas, Mexico",
+      "phone": "+52 (961) 123-4567",
+      "email": "contact@avocadoair.com"
+    },
+    "form": {
+      "title": "Send us a Message",
+      "name": "Your Name",
+      "email": "Your Email",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message"
+    }
+  },
+  "deals": {
+    "title": "Special Deals",
+    "bookNow": "Book Now",
+    "flightDescription": "Flight from {origin} to {destination} on {date}",
+    "loading": "Loading deals...",
+    "error": "Error loading deals"
+  },
+  "flightSearch": {
+    "title": "Search Flights",
+    "origin": "From",
+    "destination": "To",
+    "selectOrigin": "Select origin",
+    "selectDestination": "Select destination",
+    "departureDate": "Departure Date",
+    "returnDate": "Return Date",
+    "returnFlight": "Return Flight",
+    "passengers": "Passengers",
+    "search": "Search Flights",
+    "searching": "Searching...",
+    "sameAirportError": "Origin and destination cannot be the same",
+    "returnDateRequired": "Return date is required for round trips"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "next": "Next",
+    "confirm": "Confirm",
+    "close": "Close",
+    "saving": "Saving...",
+    "updating": "Updating...",
+    "tryAgain": "Try Again"
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "contact": "Contact Us",
+    "rights": "All rights reserved."
+  },
+  "home": {
+    "title": "Fly with AvocadoAir",
+    "subtitle": "Your Premium Air Travel Experience",
+    "bookNow": "Book Your Flight",
+    "popularDestinations": "Popular Destinations",
+    "whyChooseUs": "Why Choose AvocadoAir?",
+    "features": {
+      "globalNetwork": {
+        "title": "Global Network",
+        "description": "Fly to over 100 destinations worldwide"
+      },
+      "bestDeals": {
+        "title": "Best Deals",
+        "description": "Competitive prices and special offers"
+      },
+      "onTime": {
+        "title": "On-Time Service",
+        "description": "Punctual flights and reliable service"
+      },
+      "premium": {
+        "title": "Premium Experience",
+        "description": "Luxury amenities and comfort"
+      }
+    }
+  }
+} 
